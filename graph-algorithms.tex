@@ -1,0 +1,186 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[ignorenonframetext,]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph:
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+\centering
+\begin{beamercolorbox}[sep=16pt,center]{part title}
+  \usebeamerfont{part title}\insertpart\par
+\end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+\centering
+\begin{beamercolorbox}[sep=12pt,center]{part title}
+  \usebeamerfont{section title}\insertsection\par
+\end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+\centering
+\begin{beamercolorbox}[sep=8pt,center]{part title}
+  \usebeamerfont{subsection title}\insertsubsection\par
+\end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\begin{frame}{What is a graph?}
+\protect\hypertarget{what-is-a-graph}{}
+
+A data structure to represent link between objects. A graph is defined
+by a set of nodes V and a set of edges E.
+
+We can summarize this definition by the following formula:
+
+\[
+G = (E, V)
+\]
+
+\begin{block}{What's the difference between a graph and a tree?}
+
+A graph can contain cycles (a node can be visited twice).
+
+\end{block}
+
+\begin{block}{Different type of graphs}
+
+\begin{itemize}
+\tightlist
+\item
+  Acyclic Graph A graph that has no cycle.
+\item
+  Cyclic Graph A graph that has at least one cycle.
+\item
+  Directed Graph A graph in which edge has direction. That is the nodes
+  are ordered pairs in the definition of every edge.
+\item
+  Undirected Graph A graph in which edge are not directed. Meaning, the
+  edges are defined by an unordered pair of nodes.
+\item
+  Directed Acyclic Graph A graph that is both directed and acyclic.
+\item
+  Connected graph Every pair of nodes has a path linking them. Put in
+  another way, there are no inaccessible node.
+\item
+  Disconnected graph A graph in which there is at least one inaccessible
+  node.
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Different way to represent a graph}
+\protect\hypertarget{different-way-to-represent-a-graph}{}
+
+There are 2 ways to represent a graph:
+
+\begin{itemize}
+\tightlist
+\item
+  adjacency list For each node, provide a list of other nodes that are
+  adjacent to it.
+\item
+  adjacency matrix A matrix construct by aligning the nodes in the row
+  and the columns and putting a value if the nodes are linked by an
+  edge.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Graph traversal algorithms}
+\protect\hypertarget{graph-traversal-algorithms}{}
+
+\begin{block}{DFS (Depth-First Search)}
+
+A graph traversal algorithm in which one start with a root node
+(artritrarily choosen) then expore as far as possible along each branch
+before backtracking.
+
+\end{block}
+
+\begin{block}{BFS (Breadth-First Search)}
+
+A graph traversal algorithm in which one explore every possible node in
+the current depth level before going to the next.
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Path finding algorithms}
+\protect\hypertarget{path-finding-algorithms}{}
+
+\begin{block}{A* algorithm}
+
+\end{block}
+
+\begin{block}{Dijkstra algorithm}
+
+\end{block}
+
+\end{frame}
+
+\end{document}
