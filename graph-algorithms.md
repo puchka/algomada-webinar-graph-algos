@@ -1,3 +1,10 @@
+---
+title: Graph traversal and Path-finding Algorithms used in Video Games
+author: Marius Rabenarivo
+bibliography: graph-algorithms.bib
+nocite: '@*'
+---
+
 # What is a graph?
 
 A data structure to represent link between objects.
@@ -86,3 +93,25 @@ shortest-path (with respect to given weights) from source to goal.
 Dijkstra algorithm solves the single-source shortest-paths problem on
 a weighted directed graph for the case in which all weights are
 non-negative.
+
+# Path-finding
+
+![Example path-finding situation](concave1.png "Example path-finding situation"){height=250}
+
+# Path-finding
+
+![Example path-finding situation](concave2.png "Example path-finding situation"){height=250}
+
+# A* Algorithm
+
+## History
+
+![A* was invented by researchers working on Shakey the Robot's path
+planning.](330px-SRI_Shakey_with_callouts.jpg "A* was invented by
+researchers working on Shakey the Robot's path planning."){height=250}
+
+# References
+
+- https://en.wikipedia.org/wiki/A*_search_algorithm 
+- http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
+
