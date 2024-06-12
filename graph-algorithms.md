@@ -7,6 +7,19 @@ nocite: '@*'
 
 ![](AlgoMada.png)
 
+# About me
+
+![](marius.jpg){height=100}
+
+- Telecommunications, ESPA Alumni
+- Computer Science, University of Reunion Island Alumni
+- FaceDev Admin since 2012
+- Founder member of AlgoMada
+- Clojure dev
+- Computer Science Enthusiast
+- Current interests: Cryptocurrency, Clojure programming language
+- Side project: BetaX Community
+
 # What is a graph?
 
 A data structure to represent link between objects.
