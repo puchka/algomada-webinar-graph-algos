@@ -5,6 +5,8 @@ bibliography: graph-algorithms.bib
 nocite: '@*'
 ---
 
+![](AlgoMada.png)
+
 # What is a graph?
 
 A data structure to represent link between objects.
