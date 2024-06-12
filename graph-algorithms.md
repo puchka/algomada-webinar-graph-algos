@@ -42,12 +42,14 @@ For each node, provide a list of other nodes that are adjacent to it.
 - adjacency matrix A matrix construct by aligning the nodes in the row
 and the columns and putting a value if the nodes are linked by an edge.
 
+![(a) Undirected graph with 5 vertices and 7 edges (b) Adjacency-list representation (c) Adjacency-matrix representation](graph-representation.png "Graph representation")
+
 # Graph traversal algorithms
 
 ## DFS (Depth-First Search)
 
 A graph traversal algorithm in which one start with a root node
-(artritrarily choosen) then expore as far as possible along each
+(arbitrarily chosen) then explore as far as possible along each
 branch before backtracking.
 
 ## BFS (Breadth-First Search)
@@ -55,8 +57,32 @@ branch before backtracking.
 A graph traversal algorithm in which one explore every possible node in
 the current depth level before going to the next.
 
+# BFS (Breadth-First Search)
+
+![Breadth-first search pseudo-code](breadth-first-search-pseudocode.png "Breadth-first search pseudocode"){height=250}
+
+# BFS (Breadth-First Search)
+
+![Operation of BFS on an undirected graph](bfs-undirected-graph.png "Operation of BFS on an undirected graph"){height=250}
+
+# Depth-First Search
+
+![Depth-First Search Pseudocode](depth-first-search-pseudocode.png "Depth-First Search pseudocode"){height=250}
+
+# Depth-First Search
+
+![Depth-First Search progress on a directed graph](progress-dfs-directed-graph.png "Progress of DFS on a directed graph"){height=275}
+
 # Path finding algorithms
 
 ## A* algorithm
 
+A* (pronounced "A-Star") is a graph traversal and path-finding
+algorithm.  Given a source and a goal node, the algorithm find the
+shortest-path (with respect to given weights) from source to goal.
+
 ## Dijkstra algorithm
+
+Dijkstra algorithm solves the single-source shortest-paths problem on
+a weighted directed graph for the case in which all weights are
+non-negative.
