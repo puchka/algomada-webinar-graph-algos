@@ -57,6 +57,8 @@ Every pair of nodes has a path linking them. Put in another way, there
 are no inaccessible node.
 - Disconnected graph
 A graph in which there is at least one inaccessible node.
+- A multigraph
+A graph that can have multiple edges between the same nodes.
 
 # Different way to represent a graph
 
