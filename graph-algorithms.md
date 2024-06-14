@@ -32,7 +32,7 @@ G = (E, V)
 $$
 
 Example:
-[https://www.redblobgames.com/pathfinding/grids/graphs.html](https://www.redblobgames.com/pathfinding/grids/graphs.html)
+[https://www.redblobgames.com/pathfinding/grids/graphs.html#properties](https://www.redblobgames.com/pathfinding/grids/graphs.html#properties)
 
 # What's the difference between a graph and a tree?
 
@@ -129,6 +129,17 @@ non-negative.
 ![A* was invented by researchers working on Shakey the Robot's path
 planning.](330px-SRI_Shakey_with_callouts.jpg "A* was invented by
 researchers working on Shakey the Robot's path planning."){height=250}
+
+# Application in Video Games
+
+For 2D video games, a tile map can be transformed into a graph.  Each
+cell of the grid will be a node in the graph and the edges are going
+to be the four directions: east, north, west, south.
+
+![Map as graph](map-as-graph.png "Map as graph"){height=150}
+
+Example:
+[https://www.redblobgames.com/pathfinding/grids/graphs.html#grids](https://www.redblobgames.com/pathfinding/grids/graphs.html#grids)
 
 # References
 
