@@ -31,11 +31,14 @@ $$
 G = (E, V)
 $$
 
-## What's the difference between a graph and a tree?
+Example:
+[https://www.redblobgames.com/pathfinding/grids/graphs.html](https://www.redblobgames.com/pathfinding/grids/graphs.html)
+
+# What's the difference between a graph and a tree?
 
 A graph can contain cycles (a node can be visited twice).
 
-## Different type of graphs
+# Different type of graphs
 
 - Acyclic Graph
 A graph that has no cycle.
