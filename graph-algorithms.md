@@ -49,6 +49,8 @@ Example:
 
 A graph can contain cycles (a node can be visited twice).
 
+![Tree vs Graph](Tree-Data-Structure-Example.png "Tree data structure example"){height=200}
+
 # Different type of graphs
 
 - Acyclic Graph
