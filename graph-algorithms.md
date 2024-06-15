@@ -20,6 +20,10 @@ nocite: '@*'
 - Current interests: Cryptocurrency, Clojure programming language
 - Side project: BetaX Community
 
+# Motivation: Why I do this?
+
+![Feynman technique for studying](feynman-technique.png "Motivation: Why I do this?"){height=256}
+
 # Definition of Computer Science
 
 "We are about to study the idea of a computational
