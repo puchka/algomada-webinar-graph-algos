@@ -73,16 +73,19 @@ and the columns and putting a value if the nodes are linked by an edge.
 
 # Graph traversal algorithms
 
+## BFS (Breadth-First Search)
+
+A graph traversal algorithm in which one explore every possible node
+in the current depth level before going to the next.  Usually used to
+find shortest path distance from the start to a given vertex and the
+associated predecessor subgraph.
+
 ## DFS (Depth-First Search)
 
 A graph traversal algorithm in which one start with a root node
 (arbitrarily chosen) then explore as far as possible along each
 branch before backtracking.
-
-## BFS (Breadth-First Search)
-
-A graph traversal algorithm in which one explore every possible node in
-the current depth level before going to the next.
+Usually used as a subroutine in another algorithm.
 
 # BFS (Breadth-First Search)
 
@@ -140,6 +143,48 @@ to be the four directions: east, north, west, south.
 
 Example:
 [https://www.redblobgames.com/pathfinding/grids/graphs.html#grids](https://www.redblobgames.com/pathfinding/grids/graphs.html#grids)
+
+# Dijkstra’s Algorithm
+
+Dijkstra’s Algorithm works by visiting vertices in the graph starting
+with the object’s starting point. It then repeatedly examines the
+closest not-yet-examined vertex, adding its vertices to the set of
+vertices to be examined.
+
+![Dijkstra algorithm](dijkstra.png "Didjkstra algorithm illustration"){height=150}
+
+# Gready Best-First search
+The Greedy Best-First-Search algorithm works in a similar way, except
+that it has some estimate (called a heuristic) of how far from the
+goal any vertex is. Instead of selecting the vertex closest to the
+starting point, it selects the vertex closest to the goal. Greedy
+Best-First-Search is not guaranteed to find a shortest
+path.
+
+![Greedy Best-first search](best-first-search.png "Greedy Best-First Search"){height=150}
+
+# Dijkstra’s Algorithm and Best-First-Search
+
+Let’s consider the concave obstacle as described in the previous
+section. Dijkstra’s Algorithm works harder but is guaranteed to find a
+shortest path:
+
+![Dijkstra's Algorithm with obstacle](dijkstra-trap.png "Dijkstra’s Algorithm with obstacle"){height=150}
+
+# Dijkstra’s Algorithm and Best-First-Search
+
+Greedy Best-First-Search on the other hand does less work but its path is clearly not as good:
+
+![Greedy Best-First Search with trap](best-first-search-trap.png "Greedy Best-First Search with trap"){height=150}
+
+# The A* Algorithm
+
+A* is like Dijkstra’s Algorithm in that it can be used to find a
+shortest path. A* is like Greedy Best-First-Search in that it can use
+a heuristic to guide itself. In the simple case, it is as fast as
+Greedy Best-First-Search:
+
+![A* algorithm](a-star.png "A* algorithm"){height=150}
 
 # References
 

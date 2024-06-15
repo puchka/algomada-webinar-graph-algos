@@ -215,18 +215,20 @@ Adjacency-list representation (c) Adjacency-matrix representation}
 \begin{frame}{Graph traversal algorithms}
 \protect\hypertarget{graph-traversal-algorithms}{}
 
+\begin{block}{BFS (Breadth-First Search)}
+
+A graph traversal algorithm in which one explore every possible node in
+the current depth level before going to the next. Usually used to find
+shortest path distance from the start to a given vertex and the
+associated predecessor subgraph.
+
+\end{block}
+
 \begin{block}{DFS (Depth-First Search)}
 
 A graph traversal algorithm in which one start with a root node
 (arbitrarily chosen) then explore as far as possible along each branch
-before backtracking.
-
-\end{block}
-
-\begin{block}{BFS (Breadth-First Search)}
-
-A graph traversal algorithm in which one explore every possible node in
-the current depth level before going to the next.
+before backtracking. Usually used as a subroutine in another algorithm.
 
 \end{block}
 
@@ -350,6 +352,84 @@ be the four directions: east, north, west, south.
 
 Example:
 \url{https://www.redblobgames.com/pathfinding/grids/graphs.html\#grids}
+
+\end{frame}
+
+\begin{frame}{Dijkstra's Algorithm}
+\protect\hypertarget{dijkstras-algorithm}{}
+
+Dijkstra's Algorithm works by visiting vertices in the graph starting
+with the object's starting point. It then repeatedly examines the
+closest not-yet-examined vertex, adding its vertices to the set of
+vertices to be examined.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.5625in]{dijkstra.png}
+\caption{Dijkstra algorithm}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Gready Best-First search}
+\protect\hypertarget{gready-best-first-search}{}
+
+The Greedy Best-First-Search algorithm works in a similar way, except
+that it has some estimate (called a heuristic) of how far from the goal
+any vertex is. Instead of selecting the vertex closest to the starting
+point, it selects the vertex closest to the goal. Greedy
+Best-First-Search is not guaranteed to find a shortest path.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.5625in]{best-first-search.png}
+\caption{Greedy Best-first search}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Dijkstra's Algorithm and Best-First-Search}
+\protect\hypertarget{dijkstras-algorithm-and-best-first-search}{}
+
+Let's consider the concave obstacle as described in the previous
+section. Dijkstra's Algorithm works harder but is guaranteed to find a
+shortest path:
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.5625in]{dijkstra-trap.png}
+\caption{Dijkstra's Algorithm with obstacle}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Dijkstra's Algorithm and Best-First-Search}
+\protect\hypertarget{dijkstras-algorithm-and-best-first-search-1}{}
+
+Greedy Best-First-Search on the other hand does less work but its path
+is clearly not as good:
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.5625in]{best-first-search-trap.png}
+\caption{Greedy Best-First Search with trap}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{The A* Algorithm}
+\protect\hypertarget{the-a-algorithm}{}
+
+A* is like Dijkstra's Algorithm in that it can be used to find a
+shortest path. A* is like Greedy Best-First-Search in that it can use a
+heuristic to guide itself. In the simple case, it is as fast as Greedy
+Best-First-Search:
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.5625in]{a-star.png}
+\caption{A* algorithm}
+\end{figure}
 
 \end{frame}
 
