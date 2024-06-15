@@ -54,24 +54,59 @@ A graph can contain cycles (a node can be visited twice).
 # Different type of graphs
 
 - Acyclic Graph
+
 A graph that has no cycle.
+
 - Cyclic Graph
+
 A graph that has at least one cycle.
+
+![Acyclic vs Cyclic graph](acyclic-cyclic.png "Acyclic vs Cyclic graph"){height=96}
+
+# Different type of graphs
+
 - Directed Graph 
+
 A graph in which edge has direction. That is the nodes are ordered
 pairs in the definition of every edge.
+
 - Undirected Graph
+
 A graph in which edge are not directed. Meaning, the edges are defined
 by an unordered pair of nodes.
+
+![Undirected vs Directed Graph](undirected-directed.png "Undirected/Directed graph"){height=96}
+
+# Different type of graphs
+
 - Directed Acyclic Graph
+
 A graph that is both directed and acyclic.
+
+![Directed Acyclic Graph](dag.png "Directed Acyclic Graph"){height=200}
+
+# Different type of graphs
+
 - Connected graph
+
 Every pair of nodes has a path linking them. Put in another way, there
 are no inaccessible node.
+
 - Disconnected graph
+
 A graph in which there is at least one inaccessible node.
+
+![Disconnected vs Connected Graph](disconnected-connected.png "Disconnected vs Connected graph"){height=150}
+
+# Different type of graphs
+
 - A multigraph
+
 A graph that can have multiple edges between the same nodes.
+
+![A multigraph with multiple edges (red) and several loops (blue). By
+0x24a537r9 - Own work, CC BY-SA 3.0,
+https://commons.wikimedia.org/w/index.php?curid=12247695](Multi-pseudograph.png "A multigraph with multiple edges (red) and several loops (blue)."){height=200}
 
 # Different way to represent a graph
 
