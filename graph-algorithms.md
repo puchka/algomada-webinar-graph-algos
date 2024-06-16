@@ -182,6 +182,15 @@ to $v$ that is also a shortest path from $s$ to $v$ in $G$.
 
 ![Depth-First Search Pseudocode](depth-first-search-pseudocode.png "Depth-First Search pseudocode"){height=225}
 
+# Tree, Forward, Back and Cross Edges in Depth-First Search
+
+- Tree Edge: It is an edge which is present in the tree obtained after applying DFS on the graph.
+- Forward Edge: It is an edge $(u, v)$ such that $v$ is a descendant but not part of the DFS tree.
+- Back edge: It is an edge $(u, v)$ such that $v$ is the ancestor of node $u$ but is not part of the DFS tree.
+- Cross Edge: It is an edge that connects two nodes such that they do not have any ancestor and a descendant relationship between them.
+
+![Tree, cross, forward and back edges](tree-forward-back-and-cross-edges.jpg "Tree, cross, forward and back edges"){height=100}
+
 # Depth-First Search
 
 ![Depth-First Search progress on a directed graph](progress-dfs-directed-graph.png "Progress of DFS on a directed graph"){height=225}

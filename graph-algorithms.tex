@@ -435,6 +435,33 @@ The predecessor subgraph \(G_{\pi}\) is a \textbf{breadth-ﬁrst tree} if
 
 \end{frame}
 
+\begin{frame}{Tree, Forward, Back and Cross Edges in Depth-First Search}
+\protect\hypertarget{tree-forward-back-and-cross-edges-in-depth-first-search}{}
+
+\begin{itemize}
+\tightlist
+\item
+  Tree Edge: It is an edge which is present in the tree obtained after
+  applying DFS on the graph.
+\item
+  Forward Edge: It is an edge \((u, v)\) such that \(v\) is a descendant
+  but not part of the DFS tree.
+\item
+  Back edge: It is an edge \((u, v)\) such that \(v\) is the ancestor of
+  node \(u\) but is not part of the DFS tree.
+\item
+  Cross Edge: It is an edge that connects two nodes such that they do
+  not have any ancestor and a descendant relationship between them.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.04167in]{tree-forward-back-and-cross-edges.jpg}
+\caption{Tree, cross, forward and back edges}
+\end{figure}
+
+\end{frame}
+
 \begin{frame}{Depth-First Search}
 \protect\hypertarget{depth-first-search-1}{}
 
