@@ -1,8 +1,11 @@
 ---
 title: Graph traversal and Path-finding Algorithms used in Video Games
 author: Marius Rabenarivo
+date: 16th June 2024
 titlegraphic: background-graph.png
 logo: logo.png
+theme: Dresden
+fonttheme: "professionalfonts"
 bibliography: graph-algorithms.bib
 nocite: '@*'
 ---
@@ -24,7 +27,7 @@ nocite: '@*'
 
 # Motivation: Why I do this?
 
-![Feynman technique for studying](feynman-technique.png "Motivation: Why I do this?"){height=256}
+![Feynman technique for studying](feynman-technique.png "Motivation: Why I do this?"){height=225}
 
 # Definition of Computer Science
 
@@ -91,7 +94,7 @@ by an unordered pair of nodes.
 
 A graph that is both directed and acyclic.
 
-![Directed Acyclic Graph](dag.png "Directed Acyclic Graph"){height=200}
+![Directed Acyclic Graph](dag.png "Directed Acyclic Graph"){height=175}
 
 # Different type of graphs
 
@@ -104,7 +107,7 @@ are no inaccessible node.
 
 A graph in which there is at least one inaccessible node.
 
-![Disconnected vs Connected Graph](disconnected-connected.png "Disconnected vs Connected graph"){height=150}
+![Disconnected vs Connected Graph](disconnected-connected.png "Disconnected vs Connected graph"){height=100}
 
 # Different type of graphs
 
@@ -114,7 +117,7 @@ A graph that can have multiple edges between the same nodes.
 
 ![A multigraph with multiple edges (red) and several loops (blue). By
 0x24a537r9 - Own work, CC BY-SA 3.0,
-https://commons.wikimedia.org/w/index.php?curid=12247695](Multi-pseudograph.png "A multigraph with multiple edges (red) and several loops (blue)."){height=200}
+https://commons.wikimedia.org/w/index.php?curid=12247695](Multi-pseudograph.png "A multigraph with multiple edges (red) and several loops (blue)."){height=150}
 
 # Different way to represent a graph
 
@@ -143,23 +146,23 @@ A graph traversal algorithm in which one start with a root node
 branch before backtracking.
 Usually used as a subroutine in another algorithm.
 
-![Graph traversal algorithms](graph-traversal-algorithms-1.png "Graph traversal algorithms"){height=128}
+![Graph traversal algorithms](graph-traversal-algorithms-1.png "Graph traversal algorithms"){height=80}
 
 # BFS (Breadth-First Search)
 
-![Breadth-first search pseudo-code](breadth-first-search-pseudocode.png "Breadth-first search pseudocode"){height=250}
+![Breadth-first search pseudo-code](breadth-first-search-pseudocode.png "Breadth-first search pseudocode"){height=225}
 
 # BFS (Breadth-First Search)
 
-![Operation of BFS on an undirected graph](bfs-undirected-graph.png "Operation of BFS on an undirected graph"){height=250}
+![Operation of BFS on an undirected graph](bfs-undirected-graph.png "Operation of BFS on an undirected graph"){height=225}
 
 # Depth-First Search
 
-![Depth-First Search Pseudocode](depth-first-search-pseudocode.png "Depth-First Search pseudocode"){height=250}
+![Depth-First Search Pseudocode](depth-first-search-pseudocode.png "Depth-First Search pseudocode"){height=225}
 
 # Depth-First Search
 
-![Depth-First Search progress on a directed graph](progress-dfs-directed-graph.png "Progress of DFS on a directed graph"){height=275}
+![Depth-First Search progress on a directed graph](progress-dfs-directed-graph.png "Progress of DFS on a directed graph"){height=225}
 
 # Path finding algorithms
 
@@ -177,11 +180,11 @@ non-negative.
 
 # Path-finding
 
-![Example path-finding situation](concave1.png "Example path-finding situation"){height=250}
+![Example path-finding situation](concave1.png "Example path-finding situation"){height=225}
 
 # Path-finding
 
-![Example path-finding situation](concave2.png "Example path-finding situation"){height=250}
+![Example path-finding situation](concave2.png "Example path-finding situation"){height=225}
 
 # A* Algorithm
 
@@ -189,7 +192,7 @@ non-negative.
 
 ![A* was invented by researchers working on Shakey the Robot's path
 planning.](330px-SRI_Shakey_with_callouts.jpg "A* was invented by
-researchers working on Shakey the Robot's path planning."){height=250}
+researchers working on Shakey the Robot's path planning."){height=200}
 
 # Application in Video Games
 
@@ -197,7 +200,7 @@ For 2D video games, a tile map can be transformed into a graph.  Each
 cell of the grid will be a node in the graph and the edges are going
 to be the four directions: east, north, west, south.
 
-![Map as graph](map-as-graph.png "Map as graph"){height=150}
+![Map as graph](map-as-graph.png "Map as graph"){height=110}
 
 Example:
 [https://www.redblobgames.com/pathfinding/grids/graphs.html#grids](https://www.redblobgames.com/pathfinding/grids/graphs.html#grids)
@@ -219,7 +222,7 @@ starting point, it selects the vertex closest to the goal. Greedy
 Best-First-Search is not guaranteed to find a shortest
 path.
 
-![Greedy Best-first search](best-first-search.png "Greedy Best-First Search"){height=150}
+![Greedy Best-first search](best-first-search.png "Greedy Best-First Search"){height=128}
 
 # Dijkstra’s Algorithm and Best-First-Search
 

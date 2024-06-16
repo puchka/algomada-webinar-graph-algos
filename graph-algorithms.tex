@@ -52,6 +52,8 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
+\usetheme[]{Dresden}
+\usefonttheme{professionalfonts}
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
@@ -95,7 +97,7 @@
 
 \title{Graph traversal and Path-finding Algorithms used in Video Games}
 \author{Marius Rabenarivo}
-\date{}
+\date{16th June 2024}
 \titlegraphic{\includegraphics{background-graph.png}}
 \logo{\includegraphics{logo.png}}
 
@@ -140,7 +142,7 @@
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.66667in]{feynman-technique.png}
+\includegraphics[width=\textwidth,height=2.34375in]{feynman-technique.png}
 \caption{Feynman technique for studying}
 \end{figure}
 
@@ -261,7 +263,7 @@ A graph that is both directed and acyclic.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.08333in]{dag.png}
+\includegraphics[width=\textwidth,height=1.82292in]{dag.png}
 \caption{Directed Acyclic Graph}
 \end{figure}
 
@@ -289,7 +291,7 @@ A graph in which there is at least one inaccessible node.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=1.5625in]{disconnected-connected.png}
+\includegraphics[width=\textwidth,height=1.04167in]{disconnected-connected.png}
 \caption{Disconnected vs Connected Graph}
 \end{figure}
 
@@ -308,7 +310,7 @@ A graph that can have multiple edges between the same nodes.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.08333in]{Multi-pseudograph.png}
+\includegraphics[width=\textwidth,height=1.5625in]{Multi-pseudograph.png}
 \caption{A multigraph with multiple edges (red) and several loops
 (blue). By 0x24a537r9 - Own work, CC BY-SA 3.0,
 https://commons.wikimedia.org/w/index.php?curid=12247695}
@@ -361,7 +363,7 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=1.33333in]{graph-traversal-algorithms-1.png}
+\includegraphics[width=\textwidth,height=0.83333in]{graph-traversal-algorithms-1.png}
 \caption{Graph traversal algorithms}
 \end{figure}
 
@@ -374,7 +376,7 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{breadth-first-search-pseudocode.png}
+\includegraphics[width=\textwidth,height=2.34375in]{breadth-first-search-pseudocode.png}
 \caption{Breadth-first search pseudo-code}
 \end{figure}
 
@@ -385,7 +387,7 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{bfs-undirected-graph.png}
+\includegraphics[width=\textwidth,height=2.34375in]{bfs-undirected-graph.png}
 \caption{Operation of BFS on an undirected graph}
 \end{figure}
 
@@ -396,7 +398,7 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{depth-first-search-pseudocode.png}
+\includegraphics[width=\textwidth,height=2.34375in]{depth-first-search-pseudocode.png}
 \caption{Depth-First Search Pseudocode}
 \end{figure}
 
@@ -407,7 +409,7 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.86458in]{progress-dfs-directed-graph.png}
+\includegraphics[width=\textwidth,height=2.34375in]{progress-dfs-directed-graph.png}
 \caption{Depth-First Search progress on a directed graph}
 \end{figure}
 
@@ -439,7 +441,7 @@ non-negative.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{concave1.png}
+\includegraphics[width=\textwidth,height=2.34375in]{concave1.png}
 \caption{Example path-finding situation}
 \end{figure}
 
@@ -450,7 +452,7 @@ non-negative.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{concave2.png}
+\includegraphics[width=\textwidth,height=2.34375in]{concave2.png}
 \caption{Example path-finding situation}
 \end{figure}
 
@@ -463,7 +465,7 @@ non-negative.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.60417in]{330px-SRI_Shakey_with_callouts.jpg}
+\includegraphics[width=\textwidth,height=2.08333in]{330px-SRI_Shakey_with_callouts.jpg}
 \caption{A* was invented by researchers working on Shakey the Robot's
 path planning.}
 \end{figure}
@@ -481,7 +483,7 @@ be the four directions: east, north, west, south.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=1.5625in]{map-as-graph.png}
+\includegraphics[width=\textwidth,height=1.14583in]{map-as-graph.png}
 \caption{Map as graph}
 \end{figure}
 
@@ -517,7 +519,7 @@ Best-First-Search is not guaranteed to find a shortest path.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=1.5625in]{best-first-search.png}
+\includegraphics[width=\textwidth,height=1.33333in]{best-first-search.png}
 \caption{Greedy Best-first search}
 \end{figure}
 
