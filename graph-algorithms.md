@@ -195,6 +195,14 @@ to $v$ that is also a shortest path from $s$ to $v$ in $G$.
 
 ![Depth-First Search progress on a directed graph](progress-dfs-directed-graph.png "Progress of DFS on a directed graph"){height=225}
 
+# Path-finding
+
+![Example path-finding situation](concave1.png "Example path-finding situation"){height=225}
+
+# Path-finding
+
+![Example path-finding situation](concave2.png "Example path-finding situation"){height=225}
+
 # Path finding algorithms
 
 ## A* algorithm
@@ -209,13 +217,28 @@ Dijkstra algorithm solves the single-source shortest-paths problem on
 a weighted directed graph for the case in which all weights are
 non-negative.
 
-# Path-finding
+# Shortest-path estimate
 
-![Example path-finding situation](concave1.png "Example path-finding situation"){height=225}
+The algorithms that follow use the technique of relaxation.  For each
+vertex $v \in V$, we maintain an attribute $v.d$, which is an upper
+bound on the weight of a shortest path from source $s$ to $v$.
+We call $v.d$ **shortest-path estimate**.
 
-# Path-finding
+![INITIALIZE-SINGLE-SOURCE procedure](initialize-single-source.png "Initialize Single Source Pseudocode"){width=125}
 
-![Example path-finding situation](concave2.png "Example path-finding situation"){height=225}
+After initialization, we have $v.\pi = NIL$ for all $v \in V$, $s.d = 0$, and $v.d = \infty$ for $v \in V - {s}$.
+
+# Relaxation
+
+The process of relaxing an edge $(u, v)$ consists of testing whether
+we can improve the shortest path to found so far by going through
+$u$ and, if so, updating $v.d$ and $v.\pi$.
+
+![Relaxing an edge $(u, v)$. The shortest-path estimate of each vertex appears within the vertex.](relax.png "Relaxation"){width=125}
+
+# Relaxation
+
+![relax procedure](relax-pseudocode.png "Relax procedure"){width=128}
 
 # A* Algorithm
 
@@ -244,6 +267,10 @@ closest not-yet-examined vertex, adding its vertices to the set of
 vertices to be examined.
 
 ![Dijkstra algorithm](dijkstra.png "Didjkstra algorithm illustration"){height=150}
+
+# Dijkstra’s Algorithm
+
+![Dijkstra's Algorithm pseudocode](dijkstra-pseudocode.png){height=125}
 
 # Gready Best-First search
 The Greedy Best-First-Search algorithm works in a similar way, except
@@ -296,3 +323,12 @@ Greedy Best-First-Search:
 - [https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)
 - [https://github.com/bradtraversy/traversy-js-challenges/tree/main/08-binary-trees-graphs/11-adjacency-matrix-adjacency-list](https://github.com/bradtraversy/traversy-js-challenges/tree/main/08-binary-trees-graphs/11-adjacency-matrix-adjacency-list)
 - [https://github.com/npretto/pathfinding](https://github.com/npretto/pathfinding)
+
+# References
+
+## Book
+
+![Introduction to Algorithms, 3rd edition by Thomas H. Cormen, Charles
+E. Leiserson, Ronald L. Rivest and Clifford
+Stein](K_on_girls_reading_cormen_algorithms.jpg "Introduction to
+Algorithms, CLRS"){height=196}

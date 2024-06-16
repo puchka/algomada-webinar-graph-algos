@@ -473,6 +473,28 @@ The predecessor subgraph \(G_{\pi}\) is a \textbf{breadth-ﬁrst tree} if
 
 \end{frame}
 
+\begin{frame}{Path-finding}
+\protect\hypertarget{path-finding}{}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=2.34375in]{concave1.png}
+\caption{Example path-finding situation}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Path-finding}
+\protect\hypertarget{path-finding-1}{}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=2.34375in]{concave2.png}
+\caption{Example path-finding situation}
+\end{figure}
+
+\end{frame}
+
 \begin{frame}{Path finding algorithms}
 \protect\hypertarget{path-finding-algorithms}{}
 
@@ -494,24 +516,48 @@ non-negative.
 
 \end{frame}
 
-\begin{frame}{Path-finding}
-\protect\hypertarget{path-finding}{}
+\begin{frame}{Shortest-path estimate}
+\protect\hypertarget{shortest-path-estimate}{}
+
+The algorithms that follow use the technique of relaxation. For each
+vertex \(v \in V\), we maintain an attribute \(v.d\), which is an upper
+bound on the weight of a shortest path from source \(s\) to \(v\). We
+call \(v.d\) \textbf{shortest-path estimate}.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.34375in]{concave1.png}
-\caption{Example path-finding situation}
+\includegraphics[width=1.30208in,height=\textheight]{initialize-single-source.png}
+\caption{INITIALIZE-SINGLE-SOURCE procedure}
+\end{figure}
+
+After initialization, we have \(v.\pi = NIL\) for all \(v \in V\),
+\(s.d = 0\), and \(v.d = \infty\) for \(v \in V - {s}\).
+
+\end{frame}
+
+\begin{frame}{Relaxation}
+\protect\hypertarget{relaxation}{}
+
+The process of relaxing an edge \((u, v)\) consists of testing whether
+we can improve the shortest path to found so far by going through \(u\)
+and, if so, updating \(v.d\) and \(v.\pi\).
+
+\begin{figure}
+\centering
+\includegraphics[width=1.30208in,height=\textheight]{relax.png}
+\caption{Relaxing an edge \((u, v)\). The shortest-path estimate of each
+vertex appears within the vertex.}
 \end{figure}
 
 \end{frame}
 
-\begin{frame}{Path-finding}
-\protect\hypertarget{path-finding-1}{}
+\begin{frame}{Relaxation}
+\protect\hypertarget{relaxation-1}{}
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=2.34375in]{concave2.png}
-\caption{Example path-finding situation}
+\includegraphics[width=1.33333in,height=\textheight]{relax-pseudocode.png}
+\caption{relax procedure}
 \end{figure}
 
 \end{frame}
@@ -562,6 +608,17 @@ vertices to be examined.
 \centering
 \includegraphics[width=\textwidth,height=1.5625in]{dijkstra.png}
 \caption{Dijkstra algorithm}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Dijkstra's Algorithm}
+\protect\hypertarget{dijkstras-algorithm-1}{}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=1.30208in]{dijkstra-pseudocode.png}
+\caption{Dijkstra's Algorithm pseudocode}
 \end{figure}
 
 \end{frame}
@@ -662,6 +719,22 @@ Best-First-Search:
 \item
   \url{https://github.com/npretto/pathfinding}
 \end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{References}
+\protect\hypertarget{references-1}{}
+
+\begin{block}{Book}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=2.04167in]{K_on_girls_reading_cormen_algorithms.jpg}
+\caption{Introduction to Algorithms, 3rd edition by Thomas H. Cormen,
+Charles E. Leiserson, Ronald L. Rivest and Clifford Stein}
+\end{figure}
 
 \end{block}
 
