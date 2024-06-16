@@ -35,6 +35,8 @@ effect, we conjure the spirits of the computer with our spells."
 Structure and Interpretation of Computer Programs, Harold Abelson and
 Gerald J. Sussman
 
+![](Fujiwara_No_Mokou_Law_Is_SICP.png "Fujiwara no Mokou Law is SICP"){height=100}
+
 # What is a graph?
 
 A data structure to represent link between objects.
