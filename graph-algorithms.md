@@ -139,6 +139,8 @@ A graph traversal algorithm in which one start with a root node
 branch before backtracking.
 Usually used as a subroutine in another algorithm.
 
+![Graph traversal algorithms](graph-traversal-algorithms-1.png "Graph traversal algorithms"){height=128}
+
 # BFS (Breadth-First Search)
 
 ![Breadth-first search pseudo-code](breadth-first-search-pseudocode.png "Breadth-first search pseudocode"){height=250}
