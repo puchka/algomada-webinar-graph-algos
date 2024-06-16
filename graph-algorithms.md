@@ -269,6 +269,14 @@ Greedy Best-First-Search:
 
 ![A* algorithm](a-star.png "A* algorithm"){height=150}
 
+#
+
+![](pathfinding-using-A-Star.png)
+
+#
+
+![](pathfinding-using-A-Star-1.png)
+
 # References
 
 - https://en.wikipedia.org/wiki/A*_search_algorithm 
