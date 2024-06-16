@@ -393,6 +393,37 @@ before backtracking. Usually used as a subroutine in another algorithm.
 
 \end{frame}
 
+\begin{frame}{Predecessor subgraph}
+\protect\hypertarget{predecessor-subgraph}{}
+
+The procedure BFS builds a breadth-ﬁrst tree as it searches the graph,
+as Fig-11 illustrates. The tree corresponds to the \(\pi\) attributes.
+
+More formally, for a graph \(G = (V, E)\) with source \(s\), we deﬁne
+the \textbf{predecessor subgraph} of \(G\) as
+\(G_{\pi} = (V_{\pi}, E_{\pi})\) \[
+V_{\pi} = { v \in V : v.\pi \ne NIL }
+\]
+
+and
+
+\[
+E_{\pi} = { (v, \pi, v) : v \in V_{\pi} - {s} }
+\]
+
+\end{frame}
+
+\begin{frame}{Breadth-first trees}
+\protect\hypertarget{breadth-first-trees}{}
+
+The predecessor subgraph \(G_{\pi}\) is a \textbf{breadth-ﬁrst tree} if
+\(V_{\pi}\) consists of the vertices reachable from \(s\) and, for all
+\(v \in V\), the subgraph \(G_{\pi}\) contains a unique simple path from
+\(s\) to \(v\) that is also a shortest path from \(s\) to \(v\) in
+\(G\).
+
+\end{frame}
+
 \begin{frame}{Depth-First Search}
 \protect\hypertarget{depth-first-search}{}
 
