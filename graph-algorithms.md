@@ -1,6 +1,8 @@
 ---
 title: Graph traversal and Path-finding Algorithms used in Video Games
 author: Marius Rabenarivo
+titlegraphic: background-graph.png
+logo: logo.png
 bibliography: graph-algorithms.bib
 nocite: '@*'
 ---
