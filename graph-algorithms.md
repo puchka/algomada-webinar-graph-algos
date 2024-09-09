@@ -14,7 +14,7 @@ nocite: '@*'
 
 # About me
 
-![](marius.jpg){height=100}
+![](marius.jpg){height=75}
 
 - Telecommunications, ESPA Alumni
 - Computer Science, University of Reunion Island Alumni
@@ -23,7 +23,7 @@ nocite: '@*'
 - Clojure dev
 - Computer Science Enthusiast
 - Current interests: Cryptocurrency, Clojure programming language
-- Side project: BetaX Community
+- Side project: BetaX Community ![](github-logo.png){height=32} github.com/puchka
 
 # Motivation: Why I do this?
 
