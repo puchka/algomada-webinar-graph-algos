@@ -1,7 +1,7 @@
 ---
-title: Graph traversal and Path-finding Algorithms used in Video Games
+title: Graph algorithms and Competitive programming
 author: Marius Rabenarivo
-date: 16th June 2024
+date: 14th September 2024
 titlegraphic: background-graph.png
 logo: logo.png
 theme: Dresden
@@ -41,6 +41,11 @@ Structure and Interpretation of Computer Programs, Harold Abelson and
 Gerald J. Sussman
 
 ![](Fujiwara_No_Mokou_Law_Is_SICP.png "Fujiwara no Mokou Law is SICP"){height=100}
+
+# Definition of Competitive Programming
+
+‘Competitive Programming’ in summary, is this: “Given well-known
+Computer Science (CS) problems, solve them as quickly as possible!”.
 
 # What is a graph?
 
