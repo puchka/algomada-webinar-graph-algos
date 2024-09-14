@@ -248,7 +248,9 @@ to $v$ that is also a shortest path from $s$ to $v$ in $G$.
 
 - [https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)
 - [https://github.com/bradtraversy/traversy-js-challenges/tree/main/08-binary-trees-graphs/11-adjacency-matrix-adjacency-list](https://github.com/bradtraversy/traversy-js-challenges/tree/main/08-binary-trees-graphs/11-adjacency-matrix-adjacency-list)
-
+- https://cpbook.net/
+- https://neetcode.io/roadmap
+- https://visualgo.net/en
 
 # References
 
