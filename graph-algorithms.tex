@@ -382,6 +382,24 @@ Adjacency-list representation (c) Adjacency-matrix representation}
 
 \end{frame}
 
+\begin{frame}[fragile]{Adjacency Matrix}
+\protect\hypertarget{adjacency-matrix}{}
+
+In contest problems involving graph, usually \texttt{V} is known, thus
+we can build a `connectivity table' by setting up a 2-D,
+\texttt{O(V\^{}2)} static array: \texttt{int\ AdjMat{[}V{]}{[}V{]}}.
+
+For an unweighted graph, we set \texttt{AdjMat{[}i{]}{[}j{]}\ =\ 1} if
+there is an edge between vertex \texttt{i-j} and set \texttt{0}
+otherwise.
+
+For a weighted graph, we set
+\texttt{AdjMat{[}i{]}{[}j{]}\ =\ weight(i,\ j)} if there is an edge
+between vertex \texttt{i-j} with \texttt{weight(i,\ j)} and set
+\texttt{0} otherwise.
+
+\end{frame}
+
 \begin{frame}{Graph traversal algorithms}
 \protect\hypertarget{graph-traversal-algorithms}{}
 

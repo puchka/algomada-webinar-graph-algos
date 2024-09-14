@@ -148,6 +148,19 @@ and the columns and putting a value if the nodes are linked by an edge.
 
 ![(a) Undirected graph with 5 vertices and 7 edges (b) Adjacency-list representation (c) Adjacency-matrix representation](graph-representation.png "Graph representation")
 
+# Adjacency Matrix
+
+In contest problems involving graph, usually `V` is known, thus we can
+build a ‘connectivity table’ by setting up a 2-D, `O(V^2)` static
+array: `int AdjMat[V][V]`.
+
+For an unweighted graph, we set `AdjMat[i][j] = 1` if there is an edge
+between vertex `i-j` and set `0` otherwise.
+
+For a weighted graph, we set `AdjMat[i][j] = weight(i, j)` if there is
+an edge between vertex `i-j` with `weight(i, j)` and set `0`
+otherwise.
+
 # Graph traversal algorithms
 
 ## BFS (Breadth-First Search)
