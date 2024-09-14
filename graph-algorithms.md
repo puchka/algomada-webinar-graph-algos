@@ -56,6 +56,10 @@ Computer Science (CS) problems, solve them as quickly as possible!”.
 - Master the Art of Testing Code
 - Practice and More Practice
 
+# Data Structures
+
+Data structure is ‘a way to store and organize data’ in order to support eﬃcient insertions, queries, searches, updates, and deletions.
+
 # What is a graph?
 
 A data structure to represent link between objects.
