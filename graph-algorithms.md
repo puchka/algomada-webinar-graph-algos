@@ -47,6 +47,15 @@ Gerald J. Sussman
 ‘Competitive Programming’ in summary, is this: “Given well-known
 Computer Science (CS) problems, solve them as quickly as possible!”.
 
+# Tips to be competitive
+
+- Type Code Faster
+- Quickly identify problem type
+- Do Algorithm Analysis
+- Master Programming Languages
+- Master the Art of Testing Code
+- Practice and More Practice
+
 # What is a graph?
 
 A data structure to represent link between objects.
