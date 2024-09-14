@@ -161,6 +161,21 @@ For a weighted graph, we set `AdjMat[i][j] = weight(i, j)` if there is
 an edge between vertex `i-j` with `weight(i, j)` and set `0`
 otherwise.
 
+# Adjacency List
+
+Adjacency List, usually in form of C++ STL `vector<vii> AdjList`, with `vii` deﬁned as:
+
+```
+typedef pair<int, int> ii;
+typedef vector<ii> vii; //our data type shortcuts
+```
+
+In Adjacency List, we have a vector of `V` vertices and for each vertex
+`v`, we store another vector that contains pairs of (neighboring vertex
+and it’s edge weight) that have connection to `v`.
+
+If the graph is unweighted, simply store weight = 0 or drop this second attribute.
+
 # Graph traversal algorithms
 
 ## BFS (Breadth-First Search)

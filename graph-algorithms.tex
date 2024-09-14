@@ -400,6 +400,28 @@ between vertex \texttt{i-j} with \texttt{weight(i,\ j)} and set
 
 \end{frame}
 
+\begin{frame}[fragile]{Adjacency List}
+\protect\hypertarget{adjacency-list}{}
+
+Adjacency List, usually in form of C++ STL
+\texttt{vector\textless{}vii\textgreater{}\ AdjList}, with \texttt{vii}
+deﬁned as:
+
+\begin{verbatim}
+typedef pair<int, int> ii;
+typedef vector<ii> vii; //our data type shortcuts
+\end{verbatim}
+
+In Adjacency List, we have a vector of \texttt{V} vertices and for each
+vertex \texttt{v}, we store another vector that contains pairs of
+(neighboring vertex and it's edge weight) that have connection to
+\texttt{v}.
+
+If the graph is unweighted, simply store weight = 0 or drop this second
+attribute.
+
+\end{frame}
+
 \begin{frame}{Graph traversal algorithms}
 \protect\hypertarget{graph-traversal-algorithms}{}
 
